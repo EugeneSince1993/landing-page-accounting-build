@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic');
+
+$photo-frame-color: #ebebeb;
+$footer-color: #f0f0f0;
+$section-1-bg-color: #eeede8;
+$april-color: #5f5b5b;
+$accountant-maraphon-color: #f94f33;
+$video-1-title-color: #f94f33;
+$know-more: #e02222;
+$know-more-light: #ff4848;
+$black-light: #4a4a4a;
+$grey-color: #9b9b9b;
+$another-grey-color: #c8c8c8;
+$footer-bg-color: #f0f0f0;
+
+$lobster: 'Lobster', cursive;
+$russo-one: 'Russo One', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+* {
+    a, a:hover {
+        text-decoration: none;
+    }
+}
+#section-1 {
+    // background-image: linear-gradient(to right, #d4d2c9, #eae9e4, #d4d2c9);
+
+    // Animated background - Start
+    color: #fff;
+    // background: 
+    // linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: 
+    linear-gradient(-45deg, #EE7752, #fdff62, #23A6D5, #23D5AB); 
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    // Animated background - End
+
+    img#accountant {
+        display: block;
+        width: 8rem;
+        margin: 1.15rem 0 0 1.6rem;
+    }
+    img#hat {
+        display: block;
+        margin-top: 2.6rem;
+        width: 12.3rem;
+    }
+    img#note {
+        display: block;
+        margin-top: 14rem;
+        width: 6.5rem;
+    }
+    h2#april {
+        font-family: $lobster;
+        color: $april-color;
+        font-size: 2.4rem;
+        margin-top: 4.5rem;
+        margin-bottom: 0;
+    }
+    h2#accountant-maraphon {
+        font-family: $russo-one;
+        color: $accountant-maraphon-color;
+        font-size: 3.9rem;
+        margin-top: 0.3rem;
+    }
+    p {
+        font-family: $roboto;
+        font-size: 0.85rem;
+        margin-top: 0.7rem;
+        line-height: 1.25rem;
+    }
+    div#schedule {
+        margin-top: 0.7rem;
+    }
+    img#schedule-image {
+        width: 1.75rem;
+        margin: 0 0.5rem 0.3rem 0.2rem;
+    }
+    span#schedule-text {
+        font-family: $roboto;
+        color: $know-more;
+        font-weight: bold;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        margin: 0 0.4rem 0 0;
+    }
+    div.videos-group-1 {
+        margin-top: 2.7rem;
+    }
+    div.videos-group-2 {
+        margin-top: 0.5rem;
+    }
+    div.videos-group-1,
+    div.videos-group-2 {
+        margin-left: 5.6rem;
+        margin-right: 5.6rem;
+        img {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    div.videos {
+        padding: 0;
+        margin: 0;
+        transition: opacity 0.5s ease;
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        h6 {
+            font-family: $roboto;
+            font-weight: bold;
+            padding: 0 0.1rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.002rem;
+            line-height: 1.187rem;
+            margin-bottom: 0.4rem;
+        }
+        h6.author {
+            margin-top: 0.5rem;
+            padding-top: 0;
+            margin-bottom: 1rem;
+            line-height: 0.75rem;
+        }
+        h6:first-of-type {
+            margin-top: 0.8rem;
+            font-size: 0.9rem;   
+        }
+    }
+    a img#register_button {
+        margin: 0.15rem 0 0;
+        padding: 0;
+        width: 19.5rem;
+        transition: opacity 0.5s ease;
+    }
+    a img#register_button:hover {
+        opacity: 0.8;
+    }
+    div.social-media {
+        margin: 1.7rem 2.2rem 0 0;
+        img {
+            width: 1.7rem;
+            transition: opacity 0.5s ease;
+            &:hover {
+                opacity: 0.65;
+            }
+        }
+        a:first-child,
+        a:nth-child(2) {
+            margin-right: 0.34rem
+        }
+    }
+    img#abacus {
+        display: block;
+        margin: 3rem 0 0 auto;
+        width: 12.6rem;
+    }
+    img#two_digits {
+        display: block;
+        margin: 26.2rem 0 0 auto;
+        width: 8.1rem;
+    }
+    div#gifts {
+        margin-top: 1.3rem;
+        margin-bottom: 1.55rem;
+    }
+    div#gifts.know_more span {
+        font-family: $roboto;
+        color: $know-more;
+        font-size: 0.85rem;  
+        font-weight: bold;
+    }
+    img.down_arrow {
+        width: 1.3rem;
+        margin-top: 0.2rem;
+    }
+}
+#section-2 {
+    div#contest {
+        h2 {
+            font-family: $russo-one;
+            margin-top: 3.55rem;
+            margin-bottom: 0;
+            padding: 0;
+            font-size: 1.5rem;
+        }
+        span {
+            font-family: $roboto;
+            color: $grey-color;
+        }
+        a, p {
+            font-family: $roboto;
+        }
+        a {
+            margin-top: 0;
+            padding: 0;
+            color: #000;
+            font-size: 0.92rem;
+            font-weight: bold;
+            transition: color 0.5s ease;
+            &:hover {
+                color: $black-light;
+            }
+            span {
+                margin-right: 0.4rem;
+                color: #000;
+            }
+        }
+        p {
+            font-size: 0.75rem;
+            margin-bottom: 0;
+            line-height: 1.2rem;
+        }
+    }
+    div#load-more.know_more {
+        span {
+            color: $know-more;
+            font-size: 0.85rem;
+        }
+        a {
+            transition: opacity 0.5s ease;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+    }
+    div.prizes {
+        padding: 0;
+        margin: 0;
+        img {
+            display: block;
+            margin: 3.15rem auto 1.6rem auto;
+            padding: 0;
+            width: 20rem;
+            // vertical-align: bottom;
+        }
+    }
+}
+footer {
+    background-color: $footer-bg-color;
+    font-family: $roboto;
+    font-size: 0.75rem;
+    .footer-text {
+        margin: 0.9rem 0 2rem 0;
+        a {
+            span {
+                font-size: 0.8rem;
+                transition: color 0.5s ease;
+                &:hover {
+                    color: $know-more-light;
+                }
+            }
+            img {
+                padding: 0;
+                margin: 0 0 0.1rem 1.6rem;
+                width: 1.6rem;
+                transition: opacity 0.5s ease;
+                &:hover {
+                    opacity: 0.8;  
+                }
+            }
+        }
+        span#vertical_line {
+            color: $another-grey-color;
+            font-size: 1.4rem;
+            margin: 5rem 0.4rem 0;
+        }
+    }
+    .know_more {
+        color: $know-more;
+    }
+}   
+@media (max-width: 399px) {
+    #section-1 {
+        h2#accountant-maraphon {
+            font-size: 2rem;
+        }
+        div.videos-group-1,
+        div.videos-group-2 {
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+        a img#register_button {
+            width: 14rem;
+        }
+        div#gifts.know_more span {
+            font-size: 0.8rem;  
+        }
+        img.down_arrow {
+            width: 1rem;
+            margin-top: 0.2rem;
+        }
+    }
+    #section-2 {
+        div.prize {
+            img#digital-photo-frame {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 12.5rem;
+            }
+            img#pandora-bracelet {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 12.5rem;
+            }
+            img#multicooker {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 18.5rem;
+            }
+        }
+        // OwlCarousel2 - start
+        .owl-prev {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40%;
+        left: 1rem;
+        display: block !important;
+        border: 0px solid black;
+        }
+        .owl-next {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40%;
+        right: 1.5rem;
+        display: block !important;
+        border: 0px solid black;
+        }
+        .owl-prev i, .owl-next i {
+        font-size: 2rem;
+        color: $know-more-light;
+        transition: 0.6s ease;
+        transition-property: opacity;
+        }
+        .owl-prev i:hover, .owl-next i:hover {
+        opacity: 0.75;
+        }
+        .owl-prev:focus, .owl-next:focus {
+        outline: none;
+        }
+        .owl-dots {
+            text-align: center;
+            margin-bottom: 2rem;
+            .owl-dot {
+                width: 0.8rem;
+                height: 0.8rem;
+                display: inline-block;
+                background-color: $footer-color;
+                border-radius: 50%;
+                border: none;
+                margin-right: 0.3rem;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background-color: $another-grey-color;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .owl-dot.active {
+                background-color: $know-more-light;
+                &:hover {
+                    background-color: $know-more;
+                }
+            }
+        }
+        // OwlCarousel2 - end
+    }
+}
+@media (min-width: 400px) and (max-width: 575px) {
+    #section-1 {
+        h2#accountant-maraphon {
+            font-size: 2.5rem;
+        }
+        div.videos-group-1,
+        div.videos-group-2 {
+            margin-left: 0rem;
+            margin-right: 0rem;
+        }
+    }
+    #section-2 {
+        div#contest {
+            padding-left: 0;
+            margin: 0 auto;
+            text-align: center; 
+        }
+        div.prize {
+            img#digital-photo-frame {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 16rem;
+            }
+            img#pandora-bracelet {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 18rem;
+            }
+            img#multicooker {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 23rem;
+            }
+        }
+        // OwlCarousel2 - start
+        .owl-prev {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40%;
+        left: 1rem;
+        display: block !important;
+        border: 0px solid black;
+        }
+        .owl-next {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40%;
+        right: 1.5rem;
+        display: block !important;
+        border: 0px solid black;
+        }
+        .owl-prev i, .owl-next i {
+        font-size: 2rem;
+        color: $know-more-light;
+        transition: 0.6s ease;
+        transition-property: opacity;
+        }
+        .owl-prev i:hover, .owl-next i:hover {
+        opacity: 0.75;
+        }
+        .owl-prev:focus, .owl-next:focus {
+        outline: none;
+        }
+        .owl-dots {
+            text-align: center;
+            margin-bottom: 2rem;
+            .owl-dot {
+                width: 0.8rem;
+                height: 0.8rem;
+                display: inline-block;
+                background-color: $footer-color;
+                border-radius: 50%;
+                border: none;
+                margin-right: 0.3rem;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background-color: $another-grey-color;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .owl-dot.active {
+                background-color: $know-more-light;
+                &:hover {
+                    background-color: $know-more;
+                }
+            }
+        }
+        // OwlCarousel2 - end
+    }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+    #section-2 {
+        div#contest {
+            padding-left: 0;
+            margin: 0 auto;
+            text-align: center; 
+        }
+        div.prize {
+            img#digital-photo-frame {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 20rem;
+            }
+            img#pandora-bracelet {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 22rem;
+            }
+            img#multicooker {
+                display: block;
+                margin: 3.15rem auto 1.6rem auto;
+                padding: 0;
+                width: 27rem;
+            }
+        }
+        // OwlCarousel2 - start
+        .owl-prev {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40%;
+        left: 2rem;
+        display: block !important;
+        border: 0px solid black;
+        }
+        .owl-next {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40%;
+        right: 2rem;
+        display: block !important;
+        border: 0px solid black;
+        }
+        .owl-prev i, .owl-next i {
+        font-size: 2rem;
+        color: $know-more-light;
+        transition: 0.6s ease;
+        transition-property: opacity;
+        }
+        .owl-prev i:hover, .owl-next i:hover {
+        opacity: 0.75;
+        }
+        .owl-prev:focus, .owl-next:focus {
+        outline: none;
+        }
+        .owl-dots {
+            text-align: center;
+            margin-bottom: 2rem;
+            .owl-dot {
+                width: 0.8rem;
+                height: 0.8rem;
+                display: inline-block;
+                background-color: $footer-color;
+                border-radius: 50%;
+                border: none;
+                margin-right: 0.3rem;
+                transition: background-color 0.5s ease;
+                &:hover {
+                    background-color: $another-grey-color;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .owl-dot.active {
+                background-color: $know-more-light;
+                &:hover {
+                    background-color: $know-more;
+                }
+            }
+        }
+        // OwlCarousel2 - end
+    }
+}
+@media (min-width: 993px) {
+    div#contest {
+        padding-left: 9rem;
+        margin-left: 0rem;
+        margin-bottom: 3.5rem;
+        line-height: 1.2rem;
+        padding-right: 0;
+    }
+    div#load-more.know_more {
+        margin-top: 0.9rem;
+        padding-right: 0;
+    }
+    div.prize {
+        img#digital-photo-frame {
+            display: block;
+            margin: 3.15rem auto 1.6rem auto;
+            padding: 0;
+            width: 20rem;
+        }
+        img#pandora-bracelet {
+            display: block;
+            margin: 3.15rem auto 1.6rem auto;
+            padding: 0;
+            width: 22rem;
+        }
+        img#multicooker {
+            display: block;
+            margin: 3.15rem auto 1.6rem auto;
+            padding: 0;
+            width: 27rem;
+        }
+    }
+    // OwlCarousel2 - start
+    .owl-prev {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    left: 2rem;
+    display: block !important;
+    border: 0px solid black;
+    }
+    .owl-next {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    right: 2rem;
+    display: block !important;
+    border: 0px solid black;
+    }
+    .owl-prev i, .owl-next i {
+    font-size: 2rem;
+    color: $know-more-light;
+    transition: 0.6s ease;
+    transition-property: opacity;
+    }
+    .owl-prev i:hover, .owl-next i:hover {
+    opacity: 0.75;
+    }
+    .owl-prev:focus, .owl-next:focus {
+    outline: none;
+    }
+    .owl-dots {
+        text-align: center;
+        margin-bottom: 2rem;
+        .owl-dot {
+            width: 0.8rem;
+            height: 0.8rem;
+            display: inline-block;
+            background-color: $footer-color;
+            border-radius: 50%;
+            border: none;
+            margin-right: 0.3rem;
+            transition: background-color 0.5s ease;
+            &:hover {
+                background-color: $another-grey-color;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .owl-dot.active {
+            background-color: $know-more-light;
+            &:hover {
+                background-color: $know-more;
+            }
+        }
+    }
+    // OwlCarousel2 - end
+}
+@media (min-width: 993px) and (max-width: 1350px) {
+    div.videos {
+        margin: 0;
+        padding: 0;
+        img {
+            width: 9.5rem;
+        }
+        h6 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 1351px) {
+    #section-1 {
+        div.videos {
+            img {
+                width: 13.5rem;
+            }
+        }
+    }
+} 
+@media (min-width: 1400px) and (max-width: 1699px) {
+    #section-1 {
+        h6 {
+            margin: 0 2rem;
+        }
+    }
+}
+@media (min-width: 1700px) {
+    #section-1 {
+        h6 {
+            margin: 0 4rem;
+        }
+    }
+}
